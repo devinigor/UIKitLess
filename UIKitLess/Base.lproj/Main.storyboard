@@ -278,6 +278,22 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9n-UQ-Qgc">
+                                <rect key="frame" x="29" y="725" width="335" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Итого - 700 руб. ">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.29803921568627451" green="0.84705882352941175" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="strokeColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Verdana-Bold" family="Verdana" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="getBildButton:" destination="577-dz-YFp" eventType="touchUpInside" id="HjZ-CP-Div"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="w0G-EY-VbK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -288,7 +304,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WD8-Fe-PKn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2701.5267175572517" y="-35.211267605633807"/>
+            <point key="canvasLocation" x="2744" y="-35"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2YT-m3-DhK">
