@@ -1,17 +1,8 @@
-//
-//  ViewController.swift
-//  UIKitLess
-//
-//  Created by Игорь Девин on 10.02.2024.
-//
+// ViewController.swift
+// Copyright © RoadMap. All rights reserved.
 
 import UIKit
 
-class ViewController: UIViewController {
+// ViewController первого экрана с регистрационными данными
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }  
-}
-
+final class ViewController: UIViewController {}
