@@ -3,5 +3,5 @@
 
 import UIKit
 
-/// ThirdVC
+/// ThirdVC предназначен для итоговой страницы с результатами заказа и итоговой суммой.
 final class ThirdViewController: UIViewController {}

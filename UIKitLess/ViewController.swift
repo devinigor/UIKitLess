@@ -3,14 +3,6 @@
 
 import UIKit
 
-// ViewController
+// ViewController первого экрана с регистрационными данными
 
-final class ViewController: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        doSome()
-    }
-
-    func doSome() {}
-}
+final class ViewController: UIViewController {}
