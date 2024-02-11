@@ -3,25 +3,23 @@
 
 import UIKit
 
-// MARK: - UIViewController
+/// Вью контроллер отвечающий за управление единственным экраном.
 final class ViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
     }
 
-    // MARK: - Constants
-    //MARK: - Visual Components
-    
-    let greenRectangle: UIImageView = {
+    // MARK: - Visual components
+
+    private let greenRectangle: UIImageView = {
         let rectangle = UIImageView()
         rectangle.frame = CGRect(x: 20, y: 406, width: 335, height: 44)
         rectangle.image = UIImage(named: "greenRectangle")
         return rectangle
     }()
 
-    let staticLabel: UILabel = {
+    private let staticLabel: UILabel = {
         let label = UILabel()
         label.frame = CGRect(x: 50, y: 282, width: 275, height: 57)
         label.text = "А вот что получится, если читать справо на лево"
@@ -32,7 +30,7 @@ final class ViewController: UIViewController {
         return label
     }()
 
-    let reverseWordLabel: UILabel = {
+    private let reverseWordLabel: UILabel = {
         let label = UILabel()
         label.frame = CGRect(x: 57, y: 339, width: 275, height: 57)
         label.font = .monospacedDigitSystemFont(ofSize: 16, weight: .heavy)
@@ -42,7 +40,7 @@ final class ViewController: UIViewController {
         return label
     }()
 
-    var wordLabel: UILabel = {
+    private var wordLabel: UILabel = {
         let label = UILabel()
         label.text = "Вы ввели слово"
         label.textColor = .black
@@ -52,7 +50,7 @@ final class ViewController: UIViewController {
         return label
     }()
 
-    var wordLabelTextDefault: UILabel = {
+    private var wordLabelTextDefault: UILabel = {
         let label = UILabel()
         label.text = "Вы ввели слово"
         label.textColor = .black
@@ -62,7 +60,7 @@ final class ViewController: UIViewController {
         return label
     }()
 
-    var enteredWordLabel: UILabel = {
+    private var enteredWordLabel: UILabel = {
         let label = UILabel()
         label.frame = CGRect(x: 50, y: 163, width: 275, height: 57)
         label.font = .monospacedDigitSystemFont(ofSize: 16, weight: .heavy)
@@ -82,9 +80,9 @@ final class ViewController: UIViewController {
         button.addTarget(self, action: #selector(actionStartButton), for: .touchUpInside)
         return button
     }()
-    
+
     // MARK: - Private methods
-    
+
     private func setupView() {
         view.addSubview(greenRectangle)
         view.addSubview(startButton)
