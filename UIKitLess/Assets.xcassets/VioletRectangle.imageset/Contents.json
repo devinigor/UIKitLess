@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "Прямоугольник 5@1x.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}
