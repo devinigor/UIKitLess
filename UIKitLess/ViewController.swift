@@ -6,21 +6,21 @@ import UIKit
 final class ViewController: UIViewController {
     // MARK: Constants
 
-    let violetRectangle: UIImageView = {
+    private let violetRectangle: UIImageView = {
         let rectangle = UIImageView()
         rectangle.frame = CGRect(x: 95, y: 235, width: 150, height: 150)
-        rectangle.image = UIImage(named: "VioletRectangle")
+        rectangle.image = UIImage(named: "violetRectangle")
         return rectangle
     }()
 
-    let greenRectangle: UIImageView = {
+    private let greenRectangle: UIImageView = {
         let rectangle = UIImageView()
         rectangle.frame = CGRect(x: 152, y: 507, width: 200, height: 200)
         rectangle.image = UIImage(named: "greenRectangle")
         return rectangle
     }()
 
-    var alertTextFieldLabel: UILabel = {
+    private var alertTextFieldLabel: UILabel = {
         let alertLabel = UILabel()
         alertLabel.frame = CGRect(x: 40, y: 45, width: 375, height: 82)
         alertLabel.backgroundColor = UIColor(named: "b")
@@ -32,6 +32,8 @@ final class ViewController: UIViewController {
         return alertLabel
     }()
 
+    // MARK: - Life cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
@@ -42,6 +44,8 @@ final class ViewController: UIViewController {
         showAlert(title: "Пожалуйста,\n представьтесь", message: nil, style: .alert)
     }
 
+    //MARK: - Private properties
+    
     private func setupView() {
         setupImageView()
         view.addSubview(violetRectangle)
@@ -76,13 +80,15 @@ final class ViewController: UIViewController {
         return button
     }()
 
+    //MARK: - Private methods
+    
     private func setupImageView() {
         let imageView = UIImageView()
         imageView.frame = CGRect(x: 0, y: 0, width: 375, height: 812)
         imageView.center = view.center
         imageView.contentMode = .scaleAspectFit
         view.addSubview(imageView)
-        imageView.image = UIImage(named: "Background.png")
+        imageView.image = UIImage(named: "background.png")
     }
 
     private func showAlert(title: String, message: String?, style: UIAlertController.Style) {
@@ -108,8 +114,8 @@ final class ViewController: UIViewController {
         let actionCancel = UIAlertAction(title: "Cancel", style: .default)
         let actionOk = UIAlertAction(title: "Ok", style: .default) { _ in
             let number = Int(alertController.textFields?.first?.text ?? "nil")
-            let arrayNumber = Int.random(in: 0 ... 9)
-            if number == arrayNumber {
+            let randomNumber = Int.random(in: 0 ... 9)
+            if number == randomNumber {
                 let alert = UIAlertController(title: "Поздравляю", message: "Вы угадали", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "Ok", style: .cancel))
                 self.present(alert, animated: true)
