@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		485F18DE2B78E4AF00BA7E55 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485F18DD2B78E4AF00BA7E55 /* SecondViewController.swift */; };
+		485F18E02B7935BC00BA7E55 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485F18DF2B7935BC00BA7E55 /* AddViewController.swift */; };
+		48937E0B2B7A78A80087FDFC /* AgePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48937E0A2B7A78A80087FDFC /* AgePicker.swift */; };
 		48BD65222B76CE7B006945A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BD65212B76CE7B006945A4 /* AppDelegate.swift */; };
 		48BD65242B76CE7B006945A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BD65232B76CE7B006945A4 /* SceneDelegate.swift */; };
-		48BD65262B76CE7B006945A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BD65252B76CE7B006945A4 /* ViewController.swift */; };
+		48BD65262B76CE7B006945A4 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BD65252B76CE7B006945A4 /* RegistrationController.swift */; };
 		48BD65292B76CE7B006945A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48BD65272B76CE7B006945A4 /* Main.storyboard */; };
 		48BD652B2B76CE7D006945A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48BD652A2B76CE7D006945A4 /* Assets.xcassets */; };
 		48BD652E2B76CE7D006945A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48BD652C2B76CE7D006945A4 /* LaunchScreen.storyboard */; };
+		48D229BA2B7A427A003D2572 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D229B92B7A427A003D2572 /* Gender.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		485F18DD2B78E4AF00BA7E55 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		485F18DF2B7935BC00BA7E55 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		48937E0A2B7A78A80087FDFC /* AgePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgePicker.swift; sourceTree = "<group>"; };
 		48BD651E2B76CE7B006945A4 /* UIKitLess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitLess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48BD65212B76CE7B006945A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48BD65232B76CE7B006945A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		48BD65252B76CE7B006945A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		48BD65252B76CE7B006945A4 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		48BD65282B76CE7B006945A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		48BD652A2B76CE7D006945A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48BD652D2B76CE7D006945A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48BD652F2B76CE7D006945A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48D229B92B7A427A003D2572 /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +66,11 @@
 			children = (
 				48BD65212B76CE7B006945A4 /* AppDelegate.swift */,
 				48BD65232B76CE7B006945A4 /* SceneDelegate.swift */,
-				48BD65252B76CE7B006945A4 /* ViewController.swift */,
+				48BD65252B76CE7B006945A4 /* RegistrationController.swift */,
+				485F18DD2B78E4AF00BA7E55 /* SecondViewController.swift */,
+				485F18DF2B7935BC00BA7E55 /* AddViewController.swift */,
+				48D229B92B7A427A003D2572 /* Gender.swift */,
+				48937E0A2B7A78A80087FDFC /* AgePicker.swift */,
 				48BD65272B76CE7B006945A4 /* Main.storyboard */,
 				48BD652A2B76CE7D006945A4 /* Assets.xcassets */,
 				48BD652C2B76CE7D006945A4 /* LaunchScreen.storyboard */,
@@ -181,9 +193,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48BD65262B76CE7B006945A4 /* ViewController.swift in Sources */,
+				48D229BA2B7A427A003D2572 /* Gender.swift in Sources */,
+				485F18E02B7935BC00BA7E55 /* AddViewController.swift in Sources */,
+				485F18DE2B78E4AF00BA7E55 /* SecondViewController.swift in Sources */,
+				48BD65262B76CE7B006945A4 /* RegistrationController.swift in Sources */,
 				48BD65222B76CE7B006945A4 /* AppDelegate.swift in Sources */,
 				48BD65242B76CE7B006945A4 /* SceneDelegate.swift in Sources */,
+				48937E0B2B7A78A80087FDFC /* AgePicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
