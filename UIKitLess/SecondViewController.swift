@@ -155,7 +155,7 @@ final class SecondViewController: UIViewController {
         title = "Birthday Reminder"
         setupUI()
     }
-
+// устанавливаем кнопку плюс
     private func setupBarItem() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(
             image:
@@ -169,7 +169,7 @@ final class SecondViewController: UIViewController {
     @objc private func setupBar() {
         navigationController?.present(AddViewController(), animated: true)
     }
-
+    // добавляем графические элементы на вью
     private func setupUI() {
         view.addSubview(avatarImage)
         view.addSubview(avatarImage2)

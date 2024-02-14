@@ -7,6 +7,7 @@ import UIKit
 final class RegistrationController: UIViewController {
     // MARK: - Constants
 
+    // создаем имагу тортика
     private let cakeImage: UIImageView = {
         let cake = UIImageView()
         cake.frame = CGRect(x: 125, y: 125, width: 125, height: 125)
@@ -14,6 +15,7 @@ final class RegistrationController: UIViewController {
         return cake
     }()
 
+    // создаем лейбл
     private let birthdayReminderLabel: UILabel = {
         let label = UILabel()
         label.frame = CGRect(x: 140, y: 250, width: 175, height: 44)
@@ -98,7 +100,8 @@ final class RegistrationController: UIViewController {
         setupButton()
     }
 
-    func setupView() {
+    // добавляем визуал на вью
+    private func setupView() {
         view.addSubview(cakeImage)
         view.addSubview(birthdayReminderLabel)
         view.addSubview(signInLabel)
@@ -110,7 +113,7 @@ final class RegistrationController: UIViewController {
         view.addSubview(switchEnter)
         view.addSubview(loginButton)
     }
-
+// метод для кнопки для перехода на следующий VC
     private func setupButton() {
         loginButton.addTarget(self, action: #selector(nextVC), for: .touchUpInside)
     }

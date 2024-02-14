@@ -4,7 +4,7 @@
 import UIKit
 
 /// Данный класс будет устанавливать пикер для возроста юзера
-class AgePicker: UIPickerView {
+final class AgePicker: UIPickerView {
     var ageInformation: String = ""
 
     // MARK: - Life Cycle
@@ -26,7 +26,7 @@ class AgePicker: UIPickerView {
         delegate = self
     }
 }
-
+//MARK: - Extantions
 // расширение определяет количество элементов и строк в пикере и сохраняет выбранное значение
 extension AgePicker: UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {

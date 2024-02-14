@@ -3,7 +3,7 @@
 
 import UIKit
 
-// Отвечает за отображение сцен
+/// Отвечает за отображение сцен
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
 

@@ -5,7 +5,9 @@ import UIKit
 
 /// class for chosen gender
 final class Gender: UIPickerView {
+    //MARK: - Constants
     private let genders: [String] = ["Male", "Female"]
+    //MARK: - Variables
     var result = ""
 
     override init(frame: CGRect) {
@@ -23,7 +25,8 @@ final class Gender: UIPickerView {
         delegate = self
     }
 }
-
+//MARK: - Extantions
+//расширение для отображения пикера, что бы вставить в текстфилд
 extension Gender: UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         1
@@ -37,7 +40,7 @@ extension Gender: UIPickerViewDataSource {
         result = genders[row]
     }
 }
-
+//расширение для отображения пикера, что бы вставить в текстфилд
 extension Gender: UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         genders[row]
