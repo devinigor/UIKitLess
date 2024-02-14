@@ -4,7 +4,7 @@
 import UIKit
 
 /// В этом классе будем добавлять нового человека в календарь ДР
-class AddViewController: UIViewController {
+final class AddViewController: UIViewController {
     // MARK: - Constants
 
     private let picker = UIDatePicker()
