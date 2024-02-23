@@ -4,7 +4,7 @@
 import UIKit
 
 /// класс для Рекомендуемого
-class RecomendationViewCell: UITableViewCell {
+final class RecomendationViewCell: UITableViewCell {
     // MARK: - Constants
 
     enum Constants {

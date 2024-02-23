@@ -3,8 +3,8 @@
 
 import UIKit
 
-/// ййй
-class FirstPostCell: UITableViewCell {
+/// класс для создания и отображения первого поста после историй.
+final class FirstPostCell: UITableViewCell {
     // MARK: - Constants
 
     enum Constants {

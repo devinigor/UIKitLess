@@ -4,7 +4,7 @@
 import UIKit
 
 /// Нотификейшены
-class NotificationViewController: UIViewController {
+final class NotificationViewController: UIViewController {
     enum RowsType {
         /// Кейс с картинками
         case notificationPicture

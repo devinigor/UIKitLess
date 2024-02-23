@@ -3,8 +3,8 @@
 
 import UIKit
 
-/// www
-class NotificationButtonViewCell: UITableViewCell {
+///  Экран уведомлений для кнопок
+final class NotificationButtonViewCell: UITableViewCell {
     // MARK: - Constants
 
     private enum Constants {

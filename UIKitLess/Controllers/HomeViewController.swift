@@ -89,7 +89,7 @@ struct RMLinkStorage {
 }
 
 /// Класс для отображения ленты
-class HomeViewController: UIViewController {
+final class HomeViewController: UIViewController {
     // MARK: - Constants
 
     enum Content {

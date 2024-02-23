@@ -4,7 +4,7 @@
 import UIKit
 
 /// stories cell
-class StoriesCell: UITableViewCell {
+final class StoriesCell: UITableViewCell {
     // MARK: - Visual Components
 
     private let loginLabelGirl: UILabel = {

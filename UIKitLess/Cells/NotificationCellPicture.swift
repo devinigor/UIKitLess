@@ -3,7 +3,7 @@
 
 import Foundation
 
-/// NotiPicture
+/// Модель для ячейки уведомлений
 struct NotificationCellPicture {
     ///  Шаблон для заполнения уведомлений
     let image: String

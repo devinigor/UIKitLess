@@ -3,7 +3,7 @@
 
 import Foundation
 
-/// qqq
+/// модель для ячейки с кнопкой
 struct NotificationCellButton {
     /// Шаблон для заполнения ячейки с кнопками
     let avatar: String

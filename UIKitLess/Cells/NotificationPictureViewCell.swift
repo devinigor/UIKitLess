@@ -3,8 +3,8 @@
 
 import UIKit
 
-/// qqq
-class NotificationPictureViewCell: UITableViewCell {
+/// Экран для уведомлений с картинками
+final class NotificationPictureViewCell: UITableViewCell {
     // MARK: - Constants
 
     private enum Constants {
