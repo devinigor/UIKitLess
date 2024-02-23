@@ -148,6 +148,8 @@ extension RecomendationViewCell {
         contentScrollView.widthAnchor.constraint(equalToConstant: 600).isActive = true
     }
 
+    // MARK: - Private Properties
+
     private func createOverlayViewAnchor() {
         overlayView.translatesAutoresizingMaskIntoConstraints = false
         overlayView.leadingAnchor.constraint(equalTo: contentScrollView.leadingAnchor, constant: 17).isActive = true

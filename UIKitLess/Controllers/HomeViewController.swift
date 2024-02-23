@@ -3,7 +3,7 @@
 
 import UIKit
 
-/// stories
+/// Структура создания лейбла и изобажения для аватара.
 struct Stories {
     let avatarName: String
     let loginName: String
@@ -19,7 +19,7 @@ struct Post {
     let isLikePressed: Bool
 }
 
-/// RMLink
+/// Хранилище для создания ячеек для блока "сторис"
 struct RMLinkStorage {
     let stories: [Stories] = [
         .init(avatarName: "podruga", loginName: "Ваша история"),
@@ -42,6 +42,7 @@ struct RMLinkStorage {
         .init(avatar: "crimea", login: "сrimea_082", isSubscribed: false),
         .init(avatar: "mary", login: "mary_pol", isSubscribed: false)
     ]
+
     let cellPicture: [NotificationCellPicture] = [
         .init(
             image: "lavanda",
