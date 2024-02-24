@@ -57,7 +57,7 @@ final class TabBarController: UITabBarController {
     }
 
     private func makeUserProfileViewController() -> UIViewController {
-        let viewController = UINavigationController(rootViewController: ProfileViewController())
+        let viewController = UINavigationController(rootViewController: UserProfileViewController())
         viewController.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
         viewController.tabBarItem = UITabBarItem(title: Constants.userTitle, image: Constants.userProfileIcon, tag: 2)
         viewController.view.backgroundColor = .white
