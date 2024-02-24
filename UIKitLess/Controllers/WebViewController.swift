@@ -1,10 +1,5 @@
-//
-//  WebViewController.swift
-//  UIKitLess
-//
-//  Created by Игорь Девин on 24.02.2024.
-//
-
+// WebViewController.swift
+// Copyright © RoadMap. All rights reserved.
 
 import UIKit
 import WebKit
@@ -13,7 +8,7 @@ import WebKit
 final class WebViewController: UIViewController, WKNavigationDelegate {
     // MARK: - Public Properties
 
-        var url = ""
+    var url = ""
 
     // MARK: - Private Properties
 

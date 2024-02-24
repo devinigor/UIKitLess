@@ -1,12 +1,5 @@
-//
-//  UserViewCell.swift
-//  UIKitLess
-//
-//  Created by Игорь Девин on 24.02.2024.
-//
-
-import UIKit
-
+// UserViewCell.swift
+// Copyright © RoadMap. All rights reserved.
 
 import UIKit
 
@@ -29,51 +22,52 @@ final class UserViewCell: UITableViewCell {
 
     private lazy var userAvatarImageView: UIImageView = {
         let imageView = UIImageView()
-               return imageView
-           }()
+        return imageView
+    }()
 
-           private lazy var webResurseButton: UIButton = {
-               let button = UIButton()
-               button.setTitleColor(.systemBlue, for: .normal)
-               button.setTitle("📎 \(Constants.webResourse)", for: .normal)
-               button.titleLabel?.font = .systemFont(ofSize: 14)
-               button.titleLabel?.textAlignment = .right
-               button.addTarget(self, action: #selector(openWebView), for: .touchUpInside)
-               return button
-           }()
+    private lazy var webResurseButton: UIButton = {
+        let button = UIButton()
+        button.setTitleColor(.systemBlue, for: .normal)
+        button.setTitle("📎 \(Constants.webResourse)", for: .normal)
+        button.titleLabel?.font = .systemFont(ofSize: 14)
+        button.titleLabel?.textAlignment = .right
+        button.addTarget(self, action: #selector(openWebView), for: .touchUpInside)
+        return button
+    }()
 
-           private lazy var loginLabel = UILabel()
-           private lazy var employeLabel = UILabel()
-           private lazy var changeButton = UIButton()
-           private lazy var sharedProfile = UIButton()
-           private lazy var addButton = UIButton()
-           private lazy var countPost = UILabel()
-           private lazy var countSubscribers = UILabel()
-           private lazy var countSubscriptions = UILabel()
-           private lazy var postTextLabel = UILabel()
-           private lazy var subscribersTextLabel = UILabel()
-           private lazy var subscriptionsTextLabel = UILabel()
+    private lazy var loginLabel = UILabel()
+    private lazy var employeLabel = UILabel()
+    private lazy var changeButton = UIButton()
+    private lazy var sharedProfile = UIButton()
+    private lazy var addButton = UIButton()
+    private lazy var countPost = UILabel()
+    private lazy var countSubscribers = UILabel()
+    private lazy var countSubscriptions = UILabel()
+    private lazy var postTextLabel = UILabel()
+    private lazy var subscribersTextLabel = UILabel()
+    private lazy var subscriptionsTextLabel = UILabel()
 
-           // MARK: - Public Properties
+    // MARK: - Public Properties
 
-           var transmisionUrl: ((_: String?) -> ())?
+    var transmisionUrl: ((_: String?) -> ())?
+
     // MARK: - Public Methods
 
-         func configureCell(user: User) {
-             webSite = user.webResurse
-             userAvatarImageView.image = UIImage(named: user.avatarName)
-             loginLabel.text = user.login
-             employeLabel.text = user.specialist
-             countPost.text = user.countPost
-             countSubscribers.text = user.countSubscribers
-             countSubscriptions.text = user.countSubscriptions
-             makeCell()
-             webResurseButton.titleLabel?.textAlignment = .left
-         }
+    func configureCell(user: User) {
+        webSite = user.webResurse
+        userAvatarImageView.image = UIImage(named: user.avatarName)
+        loginLabel.text = user.login
+        employeLabel.text = user.specialist
+        countPost.text = user.countPost
+        countSubscribers.text = user.countSubscribers
+        countSubscriptions.text = user.countSubscriptions
+        makeCell()
+        webResurseButton.titleLabel?.textAlignment = .left
+    }
 
-         // MARK: - Private Properties
+    // MARK: - Private Properties
 
-         private lazy var webSite = ""
+    private lazy var webSite = ""
 
     private func makeLabel(label: UILabel, font: UIFont = .systemFont(ofSize: 14)) {
         label.font = font

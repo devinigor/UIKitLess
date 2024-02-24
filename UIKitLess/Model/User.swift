@@ -1,9 +1,5 @@
-//
-//  User.swift
-//  UIKitLess
-//
-//  Created by Игорь Девин on 24.02.2024.
-//
+// User.swift
+// Copyright © RoadMap. All rights reserved.
 
 import Foundation
 
@@ -26,4 +22,3 @@ struct User {
     /// Колл-во подписок
     let countSubscriptions: String
 }
-
